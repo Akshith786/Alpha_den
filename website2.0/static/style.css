@@ -1,0 +1,116 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+body {
+    font-family: Calibri ,Liberation, Sans-serif;
+    background-color: #981010;
+    color: #000000;
+    line-height: 2.5;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #000000;
+    color: #a10e0e;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* ===== Sections ===== */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 45px;
+
+}
+
+/* ===== Sections ===== */
+.section {
+    position: relative;
+    padding: 60px 45px;
+}
+
+/* Divider line */
+.section::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+
+/* ===== Text ===== */
+body {
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+
+
+.image {
+    width: 80%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+
+/* ===== Footer ===== */
+footer {
+    background-color: #E6E6E6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text,
+    .image {
+        width: 100%;
+    }
+
+    .image {
+        margin-top: 30px;
+        height: 199px;
+    }
+}

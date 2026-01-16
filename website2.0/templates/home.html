@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alpha Mind</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>Welcome to Alpha Mind</h1>
+    <p>A passionate developer crafting beautiful, functional web experiences that feel as good as they look.</p>
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('project') }}">Projects</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+</header>
+
+<section class="section">
+    <div class="text">
+        <h2>This is my portfolio</h2>
+        <p>
+            Hey there my name is Akshith — welcome to my little corner of the internet! Come on in, poke around, and make yourself at home.
+            This is where I stash the things I’ve been building, experimenting with, and occasionally obsessing over.
+            You’ll find projects I’m proud of, ideas I’m still tinkering with, and a few surprises I cooked up just for fun.
+            Think of this space as a behind‑the‑scenes tour of my brain… but you know the tidy parts.
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="text">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate developer crafting beautiful, functional web experiences that feel as good as they look.
+            I love turning ideas into interactive, user‑friendly interfaces and building digital spaces that people actually enjoy using.
+            Whether it’s a sleek layout, a smooth animation, or a clever little feature, I’m always chasing that perfect blend of creativity and usability.
+        </p>
+        <p>
+            I'm a creative developer with a passion for building elegant solutions to complex problems.
+            With expertise in modern web technologies, I strive to create experiences that are both beautiful and functional.
+            When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.
+            I also plan to serve more websites while also making the website have purpose.
+        </p>
+    </div>
+    <div class="image">
+        <img src="{{ url_for('static', filename='images/mine.png') }}" alt="My photo">
+    </div>
+</section>
+
+<section class="section">
+    <div class="text">
+        <h2>Skills</h2>
+        <p><strong>Python</strong> — I’ve been learning Python for over a year now, and it continues to be the most interesting and engaging programming language I’ve worked with.
+            Its simplicity, versatility, and the endless possibilities it offers keep me motivated to learn more every day.</p>
+        <p><strong>Flask</strong> — Flask is a minor langauge that I learned during making the website,I also learned that flask is a major part of making the project run while using pop up pages </p>
+        <img src="../static/images/pf.png" height="156" width="282"/>
+        <p><strong>JavaScript</strong> — JavaScript has become my playground for creativity. I love how it lets me bring ideas to life right in the browser — from tiny interactive moments to full-on dynamic experiences.</p>
+        <p><strong>HTML & CSS</strong> — I have learned a lot of HTML and CSS during the creation of this website.</p>
+        <img src="../static/images/hcj.png" height="170" width="300"/>
+    </div>
+</section>
+
+<footer>
+    <p>© Alpha mind</p>
+</footer>
+
+</body>
+</html>
